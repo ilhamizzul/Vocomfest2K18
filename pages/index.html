@@ -3,8 +3,18 @@
 <head>
 	<title>Jendela Indonesia</title>
 	<link rel=stylesheet href="../assets/css/index.css">
+	<link rel=stylesheet href="../assets/css/loader.css">
 </head>
 <body>
+	<!-- <div id="preload">
+		<div class="logo">
+			Jendela Nusantara
+		</div>
+		<div class="loader-frame">
+			<div class="loader1" id="loader1"></div>
+			<div class="loader2" id="loader2"></div>
+		</div>
+	</div> -->
 	<!-- SIDE NAV -->
 		<div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -17,6 +27,11 @@
 
 	<!-- HOME PAGE -->
 		<div class="homepage">
+				
+			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+				<source src="../assets/videos/dummyfeed.mp4" type="video/mp4">
+			</video>
+
 			<div class="title">
 				<h2>Jendela</h2>
 				<h1>Indonesia</h1>
@@ -25,25 +40,17 @@
 		</div>
 	<!-- END HOME PAGE -->
 
+	<div class="mid-page">
+		
+	</div>
+
 	<div class="navbar" >
-		<span class="sidenav-btn" onclick="openNav()">&#9776;</span>
-		<a href="#home">Home Page</a>
+		<ul>
+		    <li><span class="sidenav-btn" onclick="openNav()">&#9776;</span></li>
+		    <li><a href="#home">Home Page</a></li>
+		</ul>
 	</div>
-	
-	<div class="region">
-		<div class="column content">
-			<h2>Wonderful</h2>
-			<h1>Lombok</h1>
-			<p>Lombok adalah sebuah pulau kecil yang berada di bagian Indonesia timur tepatnya disebelah timur Pulau Dewata Bali. Sejak zaman Penjajahan Belanda nama Lombok sudah mulai terkenal dikalangan para Penjajah Belanda karena keindahan panorama alamnya.</p>
-		</div>
-		<div class="column side-content">
-			<p>EDUKASI</p>
-			<p>GUNUNG/PEGUNUNGAN</p>
-			<p>PANTAI</p>
-			<p>PUSAT PEMBELANJAAN</p>
-			<p>TEMPAT BERSEJARAH</p>
-		</div>
-	</div>
+
 	
 
 	<script>
@@ -55,5 +62,6 @@
 		    document.getElementById("mySidenav").style.width = "0";
 		}
 	</script>
+	<script src="../assets/js/main.js"></script>
 </body>
 </html>
