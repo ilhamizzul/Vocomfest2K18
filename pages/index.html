@@ -4,65 +4,95 @@
 	<title>Jendela Indonesia</title>
 	<link rel=stylesheet href="../assets/css/index.css">
 	<link rel=stylesheet href="../assets/css/loader.css">
-	<script src="../assets/js/jquery-3.3.1.js"></script>	
+	<link rel=stylesheet href="../assets/fonts/font-awesome.min.css">
 </head>
 <body>
 	<div id="preload">
 		<div class="logo">
-			Jendela Nusantara
+			<img src="../assets/images/homepage/logo.png" alt="">
 		</div>
 		<div class="loader-frame">
 			<div class="loader1" id="loader1"></div>
 			<div class="loader2" id="loader2"></div>
 		</div>
 	</div>
-	<!-- SIDE NAV -->
-		<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a href="#">About</a>
-		  <a href="#">Services</a>
-		  <a href="#">Clients</a>
-		  <a href="#">Contact</a>
-		</div>
-	<!-- END SIDE NAV -->
 
 	<!-- HOME PAGE -->
 		<div class="homepage">
-				
-			<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-				<source src="../assets/videos/dummyfeed.mp4" type="video/mp4">
-			</video>
 
 			<div class="title">
-				<h2>Jendela</h2>
-				<h1>Indonesia</h1>
-				<h3>INFORMASI PARIWISATA KEINDAHAN INDONESIA</h3>
+				<img src="../assets/images/homepage/logo.png" alt="">
+			</div>
+
+			<div class="trigger">
+				<a href="#mid-page">
+					<i class="fa fa-angle-down" style="font-size:26px;color:white;"></i>
+					<p>Click</p>
+				</a>
 			</div>
 		</div>
 	<!-- END HOME PAGE -->
 
-	<div class="mid-page">
+	<div id="mid-page" class="mid-page">
+		<div class="mid">
+			<img src="../assets/images/home1/logo.png" alt="">
+			<div class="description">
+				<img src="../assets/images/home1/loremipsum.png" alt="">
+			</div>
+			<!-- <div class="list">
+				<div>
+					<img src="../assets/images/home1/Shape2.png" alt="">
+				</div>
+				<div>
+					<img src="../assets/images/home1/Shape1.png" alt="">
+				</div>
+				<div>
+					<img src="../assets/images/home1/Forma3.png" alt="">
+				</div>
+				<div>
+					<img src="../assets/images/home1/Forma2.png" alt="">
+				</div>
+				<div>
+					<img src="../assets/images/home1/Forma1.png" alt="">
+				</div>
+			</div> -->
+			<div id="serviceBox"> 
+			    <div class="serviceBox1">
+			        <div class="box">
+			        <img src="../assets/images/home1/Shape2.png" alt="">
+			        <p>LOMBOK</p>
+			        </div>
+			    </div>
+			     <div class="serviceBox2">
+			         <div class="box">
+			        <img src="../assets/images/home1/Shape1.png" alt="">
+			        <p>BANDUNG</p>
+			         </div>
+			    </div>
+			    <div class="serviceBox3">
+			        <div class="box">
+			        <img src="../assets/images/home1/Forma3.png" alt="">
+			        <p>YOGYAKARTA</p>
+			        </div>
+			     </div>
+			    <div class="serviceBox4">
+			        <div class="box">
+			        <img src="../assets/images/home1/Forma2.png" alt="">
+			        <p>MALANG</p>
+			        </div>
+			     </div>
+			     <div class="serviceBox5">
+			        <div class="box">
+			        <img src="../assets/images/home1/Forma1.png" alt="">
+			        <p>RAJA AMPAT</p>
+			        </div>
+			     </div>
+			 </div>
+		</div>
 		
 	</div>
 
-	<nav class="navbar" id="mynav">
-		<ul>
-		    <li><span class="sidenav-btn" onclick="openNav()">&#9776;</span></li>
-		    <li><a href="#home" id="anchor">Home Page</a></li>
-		</ul>
-	</nav>
-
 	
-
-	<script>
-		function openNav() {
-		    document.getElementById("mySidenav").style.width = "250px";
-		}
-
-		function closeNav() {
-		    document.getElementById("mySidenav").style.width = "0";
-		}
-	</script>
 	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/jquery-3.3.1.js"></script>
 </body>

@@ -63,13 +63,13 @@
 // }
 // });
 
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 525) {
-    $('nav').addClass('collored-navbar');
-  } else {
-    $('nav').removeClass('collored-navbar');
-  }
-});
+// $(window).scroll(function() {
+//   if ($(document).scrollTop() > 525) {
+//     $('nav').addClass('collored-navbar');
+//   } else {
+//     $('nav').removeClass('collored-navbar');
+//   }
+// });
 
 function preload(){
 	$(function() {

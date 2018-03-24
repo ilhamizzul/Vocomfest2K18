@@ -30,14 +30,26 @@ body {
     .col-6{
         width: 100%;
     }
+
+    ::-webkit-scrollbar{
+        width: 8px;
+        background-color: #EFEBE9;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        border-radius: 8px;
+        background-color: #9E9E9E;
+    }
+
+    ::-webkit-scrollbar-track{
+        border-radius: 8px;
+    }
 /*END DEFAULT*/
 
 /*HOME PAGE*/
     .homepage {
-        position: relative;
-        opacity: 0.65;
         min-height: 675px;
-        background-attachment: fixed;
+        background-image: url("../images/homepage/435139-nature-landscape-water-Indonesia-Bali-island-lake-temple-Asian_architecture-clouds-sunrise-mist-trees-mountains-hills-forest-reflection-morning.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -48,133 +60,111 @@ body {
         left: 0;
     }
 
-
-    #video-bg-elem {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-    }
-
     .title{
         position: absolute;
         left: 0;
         top: 35%;
         width: 100%;
         text-align: center;
+    }
+
+    .trigger{
+        position: absolute;
+        left: 0;
+        bottom: 0.5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .trigger p {
+        font-family: Futura Bk Bt;
+        font-size: 22px;
         color: white;
+        margin: 5px 0;
+    }
+
+    .trigger a:link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .trigger a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .trigger i {
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 0 5px;
+        position: relative;
+        text-align: center;
+        color: white;
+        animation: MoveUpDown 2s linear infinite;
+    }
+
+    .title img {
+        max-width: 600px;
+        height: auto;
     }
 /*END HOME PAGE*/
 
-/*SIDE BAR*/
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-
-    .sidenav-btn {
-        font-size:40px;
-        cursor:pointer;
-        float: right;
-        padding-right: 15px;
-        font-weight: bold;
-    }
-
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-/*END SIDE BAR*/
-
-/*NAV BAR*/
-    nav.navbar{
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-    }
-
-    .navbar {
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      left: 0;
-      padding-right: 15px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      float: right;
-      width: 100%;
-    }
-
-    .collored-navbar {
-        background-color: #00796B;
-        opacity: 0.85;
-        color: white;
-    }
-
-    .collored-navbar ul li a {
-        border: 3px solid white;
-        color: white;
-    }
-
-    .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: right;
-    }
-
-    li  a {
-    float: right;
-      display: block;
-      text-align: center;
-      z-index: 1;
-      padding: 10px 46px;
-      color: black;
-      margin-top: 5px;
-      margin-right: 15px;
-      border: 3px solid black;
-      border-radius: 55px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-/*END NAV BAR*/
-
 /*MID PAGE*/
     .mid-page {
-        background-image: url(../images/allpagetengah.png);
-        height: 1536px;
+        background-image: url(../images/home1/back.png);
+        height: 768px;
     }
+
+    .mid{
+        position: absolute;
+        left: 0;
+        top: 105%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .description {
+        margin-top: 25px;
+    }
+
+    #serviceBox
+    {
+        margin: 0 245px 0 0;
+        margin-top:75px;
+        height:250px;
+
+    }
+    .serviceBox1, .serviceBox2, .serviceBox3, .serviceBox4, .serviceBox5 {
+        float:left;
+        width:12%;
+    }
+
+    .box{
+        height: 250px;
+    }
+
+    /*.list {
+        margin-top: 85px;
+    }
+
+    .list img {
+        padding: 0 45px;
+    }
+
+    .list p {
+        padding: 0 45px;
+        font-size: 25px;
+        color: white;
+        margin-top: 35px;
+        font-family: Futura Bk Bt;
+    }*/
 /*END MID PAGE*/
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 25px;
+  }
 }
