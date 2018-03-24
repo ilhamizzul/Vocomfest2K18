@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: budidaya;
+
 }
 
 #preload {
@@ -26,6 +26,7 @@ body {
 	text-shadow: -1px 2px 2px #000;
 	text-align: center;
 	color: azure;
+	font-family: budidaya;
 }
 
 .loader-frame {

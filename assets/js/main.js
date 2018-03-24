@@ -16,26 +16,64 @@
 // 	}
 // })();
 
-preload = document.getElementById("preload")
+// preload = document.getElementById("preload")
 
-function fade(preload) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            preload.style.display = 'none';
-        }
-        preload.style.opacity = op;
-        preload.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 50);
-}
+// function fade(preload) {
+//     var op = 1;  // initial opacity
+//     var timer = setInterval(function () {
+//         if (op <= 0.1){
+//             clearInterval(timer);
+//             preload.style.display = 'none';
+//         }
+//         preload.style.opacity = op;
+//         preload.style.filter = 'alpha(opacity=' + op * 100 + ")";
+//         op -= op * 0.1;
+//     }, 50);
+// }
 
 
-// $(window).scroll(function(){
-// 	if ($('.navbar').offset().top < 50) {
-// 		$('.navbar').addClass('collored-navbar');
-// 	} else {
-// 		$('.navbar').removeClass('collored-navbar');
-// 	}
+// var myNav = document.getElementById('mynav');
+// window.onscroll = function () { 
+//     "use strict";
+//     if (document.body.scrollTop >= 1200 ) {
+//         myNav.classList.remove("collored-navbar");
+//     } 
+//     else {
+//         myNav.classList.add("collored-navbar");
+//     }
+// };
+
+// window.addEventListener('scroll', function (e) {
+//         var nav = document.getElementById('mynav');
+//         var a = document.getElementById('anchor');
+//         if (document.documentElement.scrollTop || document.body.scrollTop > 1200) {
+//                 nav.classList.add('collored-navbar');
+//                 anchor.classList.add('collored-navbar');
+//             } else {
+//                 nav.classList.remove('collored-navbar');
+//                 anchor.classList.remove('collored-navbar');
+//             }
+//     });
+
+// $(window).scroll(function () {
+// if ($(window).scrollTop() >= 550) {
+// $('.navbar').css('background','#00796B');
+// } else {
+// $('.navbar').css('background','transparent');
+// }
 // });
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 525) {
+    $('nav').addClass('collored-navbar');
+  } else {
+    $('nav').removeClass('collored-navbar');
+  }
+});
+
+function preload(){
+	$(function() {
+		$("#preload").fadeOut("slow");
+	});
+}
+setTimeout(preload, 2000);
