@@ -130,11 +130,17 @@ body {
     #serviceBox
     {
         margin: 0 245px 0 0;
+        margin-left:200px; 
         margin-top:75px;
         height:250px;
 
     }
-    .serviceBox1, .serviceBox2, .serviceBox3, .serviceBox4, .serviceBox5 {
+    .serviceBox1, .serviceBox2, .serviceBox3, .serviceBox4{
+        float:left;
+        width:12%;
+        padding-right:200px;
+    }
+    .serviceBox5 {
         float:left;
         width:12%;
     }
